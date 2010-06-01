@@ -1,8 +1,8 @@
 source "http://rubygems.org"
 
-gem "rails", "3.0.0.beta"
-gem "rdiscount", "1.5.8"
-gem "compass", "0.10.0.pre8"
+gem "rails", "3.0.0.beta3"
+gem "kramdown"
+gem "compass", "0.10.0", :require => false
 
 group :test do
   gem "rspec", "2.0.0.beta.4"

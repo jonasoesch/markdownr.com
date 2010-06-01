@@ -1,4 +1,4 @@
-require "rdiscount"
+require "kramdown"
 require "digest/md5"
 
 module Markdownr
@@ -9,7 +9,7 @@ module Markdownr
       text = preprocess(text)
       
       # Parse!
-      RDiscount.new(text).to_html
+      Kramdown::Document.new(text).to_html
     end
     
     def self.preprocess(text)
